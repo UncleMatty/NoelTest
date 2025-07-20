@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;LivLuv'd Brain Health Assessment Calculator&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f5f5f5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #2c3e50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.form-section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #f8f9fa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.form-section h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #34495e;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.form-group {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>label {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>input[type="text"],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>input[type="number"],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>select {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.row {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: 1fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.test-input {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: 2fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.unit {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #666;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #3498db;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 30px auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #2980b9;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.results {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #f8f9fa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>white-space: pre-wrap;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Courier New', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.grade {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 2px 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-left: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.grade-A { background: #27ae60; color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.grade-B { background: #3498db; color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.grade-C { background: #f39c12; color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.grade-D { background: #e67e22; color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.grade-F { background: #e74c3c; color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;LivLuv'd Brain Health Assessment Calculator&lt;/h1&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;form id="assessmentForm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Patient Information&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="patientName"&gt;Patient Name&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="text" id="patientName" placeholder="Enter patient name" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="age"&gt;Age&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="age" min="1" max="120" placeholder="Enter age" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="gender"&gt;Gender&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;select id="gender" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value=""&gt;Select gender&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="male"&gt;Male&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="female"&gt;Female&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="assessmentDate"&gt;Assessment Date&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="text" id="assessmentDate" readonly&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Mobility Tests&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="tugTest"&gt;TUG Test (Timed Up and Go)&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="test-input"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="tugTest" step="0.1" min="0" placeholder="Enter time"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="unit"&gt;seconds&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="gaitSpeed"&gt;Gait Speed&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="test-input"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="gaitSpeed" step="0.1" min="0" placeholder="Enter speed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="unit"&gt;m/s&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="sixMinWalk"&gt;6-Minute Walk Test&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="test-input"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="sixMinWalk" min="0" placeholder="Enter distance"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="unit"&gt;meters&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Strength Tests&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="gripStrength"&gt;Grip Strength&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="test-input"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="gripStrength" min="0" placeholder="Enter strength"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="unit"&gt;lbs&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="sitToStand"&gt;30-Second Sit-to-Stand&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="test-input"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="sitToStand" min="0" placeholder="Enter repetitions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="unit"&gt;reps&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Balance Tests&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="singleLegBalance"&gt;Single-Leg Balance&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="test-input"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="singleLegBalance" min="0" placeholder="Enter time"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="unit"&gt;seconds&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="form-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Cognitive Tests&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="mocaScore"&gt;MoCA Score&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="test-input"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="mocaScore" min="0" max="30" placeholder="Enter score"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="unit"&gt;out of 30&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="neurotrakScore"&gt;Neurotrak Assessment (Symbol/Path)&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="test-input"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="neurotrakScore" min="0" max="80" placeholder="Enter score"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="unit"&gt;out of 80&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button type="submit"&gt;Calculate Assessment&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/form&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="results" class="results"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Set today's date</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('assessmentDate').value = new Date().toLocaleDateString();</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Grade calculation functions</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function calculateGrade(value, thresholds) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (value &gt;= thresholds.A) return 'A';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (value &gt;= thresholds.B) return 'B';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (value &gt;= thresholds.C) return 'C';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (value &gt;= thresholds.D) return 'D';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return 'F';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function calculateTUGGrade(time) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Lower time is better</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (time &lt;= 10) return 'A';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (time &lt;= 12) return 'B';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (time &lt;= 14) return 'C';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (time &lt;= 16) return 'D';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return 'F';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function calculateGaitSpeedGrade(speed) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (speed &gt;= 1.2) return 'A';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (speed &gt;= 1.0) return 'B';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (speed &gt;= 0.8) return 'C';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (speed &gt;= 0.6) return 'D';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return 'F';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function calculateWalkGrade(distance) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (distance &gt;= 500) return 'A';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (distance &gt;= 400) return 'B';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (distance &gt;= 300) return 'C';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (distance &gt;= 200) return 'D';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return 'F';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function calculateGripGrade(strength, gender) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const thresholds = gender === 'male'<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>? { A: 85, B: 70, C: 55, D: 40 }</p>
+<p class="p1"><span class="Apple-converted-space">                </span>: { A: 55, B: 45, C: 35, D: 25 };</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return calculateGrade(strength, thresholds);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function calculateSitStandGrade(reps) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (reps &gt;= 17) return 'A';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (reps &gt;= 14) return 'B';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (reps &gt;= 11) return 'C';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (reps &gt;= 8) return 'D';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return 'F';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function calculateBalanceGrade(seconds) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (seconds &gt;= 30) return 'A';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (seconds &gt;= 20) return 'B';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (seconds &gt;= 10) return 'C';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (seconds &gt;= 5) return 'D';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return 'F';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function calculateMoCAGrade(score) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (score &gt;= 26) return 'A';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (score &gt;= 22) return 'B';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (score &gt;= 18) return 'C';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (score &gt;= 14) return 'D';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return 'F';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function calculateNeurotrakGrade(score) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (score &gt;= 70) return 'A';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (score &gt;= 60) return 'B';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (score &gt;= 50) return 'C';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (score &gt;= 40) return 'D';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return 'F';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function gradeToScore(grade) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const scoreMap = { A: 100, B: 80, C: 60, D: 40, F: 20 };</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return scoreMap[grade];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('assessmentForm').addEventListener('submit', function(e) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>e.preventDefault();</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Get form values</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const patientName = document.getElementById('patientName').value;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const age = document.getElementById('age').value;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const gender = document.getElementById('gender').value;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const assessmentDate = document.getElementById('assessmentDate').value;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Get test values</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const tugTest = parseFloat(document.getElementById('tugTest').value);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const gaitSpeed = parseFloat(document.getElementById('gaitSpeed').value);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const sixMinWalk = parseFloat(document.getElementById('sixMinWalk').value);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const gripStrength = parseFloat(document.getElementById('gripStrength').value);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const sitToStand = parseFloat(document.getElementById('sitToStand').value);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const singleLegBalance = parseFloat(document.getElementById('singleLegBalance').value);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const mocaScore = parseFloat(document.getElementById('mocaScore').value);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const neurotrakScore = parseFloat(document.getElementById('neurotrakScore').value);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Calculate grades</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const tugGrade = calculateTUGGrade(tugTest);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const gaitGrade = calculateGaitSpeedGrade(gaitSpeed);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const walkGrade = calculateWalkGrade(sixMinWalk);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const gripGrade = calculateGripGrade(gripStrength, gender);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const sitStandGrade = calculateSitStandGrade(sitToStand);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const balanceGrade = calculateBalanceGrade(singleLegBalance);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const mocaGrade = calculateMoCAGrade(mocaScore);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const neurotrakGrade = calculateNeurotrakGrade(neurotrakScore);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Calculate domain scores</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const mobilityScore = Math.round((gradeToScore(tugGrade) + gradeToScore(gaitGrade) + gradeToScore(walkGrade)) / 3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const strengthScore = Math.round((gradeToScore(gripGrade) + gradeToScore(sitStandGrade)) / 2);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const balanceScore = gradeToScore(balanceGrade);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const cognitiveScore = Math.round((gradeToScore(mocaGrade) + gradeToScore(neurotrakGrade)) / 2);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Calculate composite score</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const compositeScore = Math.round((mobilityScore + strengthScore + balanceScore + cognitiveScore) / 4);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Determine risk level</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let riskLevel;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (compositeScore &gt;= 80) riskLevel = 'Low Risk';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>else if (compositeScore &gt;= 60) riskLevel = 'Moderate Risk';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>else if (compositeScore &gt;= 40) riskLevel = 'High Risk';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>else riskLevel = 'Very High Risk';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Generate results</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const results = `LivLuv'd Brain Health Assessment Results</p>
+<p class="p1">Patient: ${patientName}</p>
+<p class="p1">Age: ${age} | Gender: ${gender}</p>
+<p class="p1">Assessment Date: ${assessmentDate}</p>
+<p class="p2"><br></p>
+<p class="p1">OVERALL RESULTS:</p>
+<p class="p1">• Composite Score: ${compositeScore}/100</p>
+<p class="p1">• Risk Level: ${riskLevel}</p>
+<p class="p2"><br></p>
+<p class="p1">DOMAIN SCORES:</p>
+<p class="p1">• Mobility: ${mobilityScore}/100</p>
+<p class="p1">• Strength: ${strengthScore}/100</p>
+<p class="p1">• Balance: ${balanceScore}/100</p>
+<p class="p1">• Cognitive: ${cognitiveScore}/100</p>
+<p class="p2"><br></p>
+<p class="p1">INDIVIDUAL TEST RESULTS:</p>
+<p class="p1">• TUG Test: ${tugTest} sec (Grade: ${tugGrade})</p>
+<p class="p1">• Gait Speed: ${gaitSpeed} m/s (Grade: ${gaitGrade})</p>
+<p class="p1">• 6-Min Walk: ${sixMinWalk} m (Grade: ${walkGrade})</p>
+<p class="p1">• Grip Strength: ${gripStrength} lbs (Grade: ${gripGrade})</p>
+<p class="p1">• Sit-to-Stand: ${sitToStand} reps (Grade: ${sitStandGrade})</p>
+<p class="p1">• Single-Leg Balance: ${singleLegBalance} sec (Grade: ${balanceGrade})</p>
+<p class="p1">• MoCA Score: ${mocaScore} /30 (Grade: ${mocaGrade})</p>
+<p class="p1">• Neurotrak Assessment: ${neurotrakScore} / 80 Symbol/Path (Grade: ${neurotrakGrade})</p>
+<p class="p2"><br></p>
+<p class="p1">Generated by LivLuv'd Brain Health Calculator`;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Display results</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('results').textContent = results;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('results').style.display = 'block';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Scroll to results</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('results').scrollIntoView({ behavior: 'smooth' });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
